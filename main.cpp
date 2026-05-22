@@ -45,9 +45,9 @@ int main() {
     cout << "\n--- Elenco Bici Disponibili ---" << endl;
     for (int i = 0; i < 5; i++) {
         if (array_bici[i].disponibile) {
-            cout << "ID: " << array_bici[i].id 
-                 << "  \nDistanza: " << distanza(array_bici[i]) 
-                 << "  \nAutonomia: " << array_bici[i].autonomia << endl;
+            cout << "ID: " << array_bici[i].id << endl; 
+            cout << "  \nDistanza: " << distanza(array_bici[i]) << endl; 
+            cout << "  \nAutonomia: " << array_bici[i].autonomia << endl;
         }
     }
 
