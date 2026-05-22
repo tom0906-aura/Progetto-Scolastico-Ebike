@@ -82,8 +82,7 @@ int main() {
         double tempo_minuti = (percorso_km / velocita_media) * 60 + ritardo_casuale;
 
         double costo_finale = tempo_minuti * 0.20;
-        array_bici[i].autonomia -= percorso_km;
-
+        array_bici[i].autonomia = array_bici[i].autonomia - percorso_km;
         cout << "\n--- Noleggio ---" << endl;
         cout << "Tempo totale: " << tempo_minuti << " minuti" << endl;
         cout << "Percorso: " << percorso_km << " km" << endl;
