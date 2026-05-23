@@ -42,12 +42,12 @@ int main() {
 
     sort(array_bici, array_bici + 5, confronta);
 
-    cout << "\n--- Elenco Bici Disponibili ---" << endl;
+    cout << "\n--< Elenco Bici Disponibili >--" << endl;
     for (int i = 0; i < 5; i++) {
         if (array_bici[i].disponibile) {
             cout << "ID: " << array_bici[i].id << endl; 
-            cout << "  \nDistanza: " << distanza(array_bici[i]) << endl; 
-            cout << "  \nAutonomia: " << array_bici[i].autonomia << endl;
+            cout << "  \n>> Distanza: " << distanza(array_bici[i]) << endl; 
+            cout << "  \n>> Autonomia: " << array_bici[i].autonomia << endl;
         }
     }
 
@@ -83,7 +83,7 @@ int main() {
 
         double costo_finale = tempo_minuti * 0.20;
         array_bici[i].autonomia = array_bici[i].autonomia - percorso_km;
-        cout << "\n--- Noleggio ---" << endl;
+        cout << "\n--< Noleggio >--" << endl;
         cout << "Tempo totale: " << tempo_minuti << " minuti" << endl;
         cout << "Percorso: " << percorso_km << " km" << endl;
         cout << "Costo: " << costo_finale << " Euro" << endl;
